@@ -1,0 +1,58 @@
+# =========================
+# Dependencies
+# =========================
+node_modules/
+**/node_modules/
+
+# =========================
+# Environment Variables
+# =========================
+.env
+.env.*
+**/.env
+**/.env.*
+
+# Allow example env files
+!.env.example
+!**/.env.example
+
+# =========================
+# Build Output
+# =========================
+dist/
+build/
+coverage/
+
+**/dist/
+**/build/
+**/coverage/
+
+# =========================
+# Logs
+# =========================
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+pnpm-debug.log*
+
+# =========================
+# OS / Editor Files
+# =========================
+.DS_Store
+Thumbs.db
+
+.vscode/
+.idea/
+
+# =========================
+# Cache
+# =========================
+.cache/
+.temp/
+.tmp/
+
+# =========================
+# Package Manager
+# =========================
+.pnpm-store/
