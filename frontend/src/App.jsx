@@ -1,9 +1,9 @@
-import './App.css'
+import CommentBoxInsecure from './components/CommentBox.insecure';
 
 function App() {
 
   return (
-    <></>
+    <CommentBoxInsecure />
   )
 }
 

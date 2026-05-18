@@ -7,6 +7,12 @@ const app = express();
 // Middleware global
 app.use(express.json());
 app.use(cookieParser()); 
+const cors = require('cors');
+
+app.use(cors({
+  origin:      process.env.FRONTEND_URL || 'http://localhost:5173',
+  credentials: true, // izinkan cookie dikirim dari frontend
+}));
 
 // Routes Sesi 1
 const usersRouter = require('./routes/users.secure');
