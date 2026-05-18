@@ -19,7 +19,8 @@ app.use('/auth',    authRouter);
 app.use('/profile', profileRouter);
 
 // Lab 3A
-const documentsRouter = require('./routes/documents.insecure');
+// const documentsRouter = require('./routes/documents.insecure');
+const documentsRouter = require('./routes/documents.secure'); 
 app.use('/documents', documentsRouter);
 
 app.get('/', (req, res) => {
